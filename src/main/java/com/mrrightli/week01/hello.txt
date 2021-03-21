@@ -1,0 +1,174 @@
+Compiled from "Hello.java"
+public class com.mrrightli.week01.Hello {
+  public com.mrrightli.week01.Hello();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void main(java.lang.String[]);
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #3                  // String Hello
+       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: iconst_4
+       9: newarray       int
+      11: dup
+      12: iconst_0
+      13: iconst_5
+      14: iastore
+      15: dup
+      16: iconst_1
+      17: bipush        6
+      19: iastore
+      20: dup
+      21: iconst_2
+      22: bipush        7
+      24: iastore
+      25: dup
+      26: iconst_3
+      27: bipush        8
+      29: iastore
+      30: astore_1
+      31: iconst_4
+      32: anewarray     #5                  // class java/lang/String
+      35: dup
+      36: iconst_0
+      37: ldc           #6                  // String +
+      39: aastore
+      40: dup
+      41: iconst_1
+      42: ldc           #7                  // String -
+      44: aastore
+      45: dup
+      46: iconst_2
+      47: ldc           #8                  // String *
+      49: aastore
+      50: dup
+      51: iconst_3
+      52: ldc           #9                  // String /
+      54: aastore
+      55: astore_2
+      56: iconst_4
+      57: newarray       int
+      59: dup
+      60: iconst_0
+      61: iconst_1
+      62: iastore
+      63: dup
+      64: iconst_1
+      65: iconst_2
+      66: iastore
+      67: dup
+      68: iconst_2
+      69: iconst_3
+      70: iastore
+      71: dup
+      72: iconst_3
+      73: iconst_4
+      74: iastore
+      75: astore_3
+      76: iconst_0
+      77: istore        4
+      79: iload         4
+      81: iconst_4
+      82: if_icmpge     207
+      85: aload_2
+      86: iload         4
+      88: aaload
+      89: ldc           #6                  // String +
+      91: invokevirtual #10                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      94: ifeq          114
+      97: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     100: aload_1
+     101: iload         4
+     103: iaload
+     104: aload_3
+     105: iload         4
+     107: iaload
+     108: invokestatic  #11                 // Method add:(II)I
+     111: invokevirtual #12                 // Method java/io/PrintStream.println:(I)V
+     114: aload_2
+     115: iload         4
+     117: aaload
+     118: ldc           #7                  // String -
+     120: invokevirtual #10                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     123: ifeq          143
+     126: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     129: aload_1
+     130: iload         4
+     132: iaload
+     133: aload_3
+     134: iload         4
+     136: iaload
+     137: invokestatic  #13                 // Method subtract:(II)I
+     140: invokevirtual #12                 // Method java/io/PrintStream.println:(I)V
+     143: aload_2
+     144: iload         4
+     146: aaload
+     147: ldc           #8                  // String *
+     149: invokevirtual #10                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     152: ifeq          172
+     155: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     158: aload_1
+     159: iload         4
+     161: iaload
+     162: aload_3
+     163: iload         4
+     165: iaload
+     166: invokestatic  #14                 // Method multiply:(II)I
+     169: invokevirtual #12                 // Method java/io/PrintStream.println:(I)V
+     172: aload_2
+     173: iload         4
+     175: aaload
+     176: ldc           #9                  // String /
+     178: invokevirtual #10                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+     181: ifeq          201
+     184: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+     187: aload_1
+     188: iload         4
+     190: iaload
+     191: aload_3
+     192: iload         4
+     194: iaload
+     195: invokestatic  #15                 // Method divide:(II)I
+     198: invokevirtual #12                 // Method java/io/PrintStream.println:(I)V
+     201: iinc          4, 1
+     204: goto          79
+     207: return
+
+  public static int add(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: iadd
+       3: ireturn
+
+  public static int subtract(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: isub
+       3: ireturn
+
+  public static int multiply(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: imul
+       3: ireturn
+
+  public static int divide(int, int);
+    Code:
+       0: iload_0
+       1: iload_1
+       2: idiv
+       3: ireturn
+
+  static {};
+    Code:
+       0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc           #16                 // String Hello Class Initialized!
+       5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       8: return
+}
