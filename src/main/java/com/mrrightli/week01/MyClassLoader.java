@@ -1,12 +1,17 @@
 package com.mrrightli.week01;
 
 import java.io.*;
+import java.lang.reflect.Method;
 
 
 public class MyClassLoader extends ClassLoader {
 
     public static void main(String[] args) throws Exception {
-        new MyClassLoader().findClass("Hello").newInstance();
+        Class<?> helloClazz= new MyClassLoader().findClass("Hello");
+        Object object = helloClazz.newInstance();
+
+        Method helloMethod = helloClazz.getMethod("hello");
+        helloMethod.invoke(object);
     }
 
     @Override
