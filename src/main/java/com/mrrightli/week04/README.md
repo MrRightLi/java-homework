@@ -42,3 +42,4 @@ public class Demo1 {
 6.（必做）把多线程和并发相关知识梳理一遍，画一个脑图，截图上传到 GitHub 上。 可选工具:xmind，百度脑图，wps，MindManage，或其他。
 
 > 参见week04文件夹下 并发编程脑图
+![并发编程 脑图](https://user-images.githubusercontent.com/16099832/114308242-ba785980-9b15-11eb-8adb-e36006f2e756.png)
